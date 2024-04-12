@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `$(window.location.origin)/api/v1/reservation/send`,
+        "https://dark-pink-hippo-hose.cyclic.app/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
